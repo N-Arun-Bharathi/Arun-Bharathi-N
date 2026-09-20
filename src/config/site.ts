@@ -1,8 +1,13 @@
+const repoName = "Arun-Bharathi-N";
+const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd ? `/${repoName}` : "");
+
 export const siteConfig = {
   name: "Arun Bharathi N",
   shortName: "ARUN",
   role: "Full Stack Developer",
-  avatar: "/avatar.png",
+  basePath: basePath,
+  avatar: `${basePath}/avatar.png`,
   experienceYears: "4+",
   joiningDate: "Feb 2022 – Present",
   location: "Chennai, Tamil Nadu, India",
@@ -36,7 +41,7 @@ export const siteConfig = {
   },
 
   resume: {
-    url: "/resume.pdf",
+    url: `${basePath}/resume.pdf`,
     filename: "Arun_Bharathi_N_Resume.pdf",
   },
 
@@ -66,8 +71,8 @@ export const siteConfig = {
       "Software Engineer",
       "Portfolio",
     ],
-    url: "https://n-arun-bharathi.github.io",
-    ogImage: "/og-image.png",
+    url: "https://n-arun-bharathi.github.io/Arun-Bharathi-N",
+    ogImage: `${basePath}/og-image.png`,
   },
 };
 
