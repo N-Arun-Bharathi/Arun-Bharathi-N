@@ -31,8 +31,8 @@ export const siteConfig = {
     phone: "+917806885868",
     displayPhone: "+91 78068 85868",
     linkedin: "https://www.linkedin.com/in/arun-bharathi-n-5742b2215/",
-    github: "https://github.com/Arun-Bharathi-N",
-    githubUsername: "Arun-Bharathi-N",
+    github: "https://github.com/N-Arun-Bharathi",
+    githubUsername: "N-Arun-Bharathi",
   },
 
   resume: {
@@ -66,7 +66,7 @@ export const siteConfig = {
       "Software Engineer",
       "Portfolio",
     ],
-    url: "https://arun-bharathi-n.github.io",
+    url: "https://n-arun-bharathi.github.io",
     ogImage: "/og-image.png",
   },
 };
