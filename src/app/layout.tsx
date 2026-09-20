@@ -34,12 +34,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.seo.url),
   icons: {
     icon: [
-      { url: `${siteConfig.basePath}/favicon.svg`, type: "image/svg+xml" },
-      { url: `${siteConfig.basePath}/icon.png`, sizes: "32x32", type: "image/png" },
+      { url: `${siteConfig.basePath}/favicon.ico`, sizes: "any" },
+      { url: `${siteConfig.basePath}/favicon-32x32.png`, sizes: "32x32", type: "image/png" },
+      { url: `${siteConfig.basePath}/favicon-16x16.png`, sizes: "16x16", type: "image/png" },
+      { url: `${siteConfig.basePath}/icon-192.png`, sizes: "192x192", type: "image/png" },
     ],
     apple: [
-      { url: `${siteConfig.basePath}/apple-icon.png`, sizes: "180x180", type: "image/png" },
+      { url: `${siteConfig.basePath}/apple-touch-icon.png`, sizes: "180x180", type: "image/png" },
     ],
+    shortcut: `${siteConfig.basePath}/favicon.ico`,
   },
   openGraph: {
     type: "website",

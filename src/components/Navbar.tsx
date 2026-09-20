@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { Github, FileDown, Menu, X } from "lucide-react";
 
@@ -60,8 +61,15 @@ export const Navbar: React.FC = () => {
           className="flex items-center gap-2.5 group focus:outline-none"
           aria-label={`${siteConfig.name} - Home`}
         >
-          <div className="w-8 h-8 rounded-lg bg-[#1e1e1e] border border-white/10 flex items-center justify-center text-white font-mono font-bold text-xs tracking-wider shadow-inner group-hover:border-white/30 transition-colors">
-            AB
+          <div className="w-8 h-8 rounded-full overflow-hidden border border-white/20 shadow-md group-hover:border-blue-500/50 transition-colors flex items-center justify-center bg-[#121212]">
+            <Image
+              src={`${siteConfig.basePath}/favicon-32x32.png`}
+              alt={siteConfig.name}
+              width={32}
+              height={32}
+              className="w-full h-full object-cover"
+              unoptimized
+            />
           </div>
           <div className="flex flex-col">
             <span className="text-sm sm:text-base font-bold tracking-tight text-white group-hover:text-zinc-200 transition-colors">
