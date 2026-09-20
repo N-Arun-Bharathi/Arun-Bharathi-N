@@ -32,6 +32,15 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.name, url: siteConfig.socials.github }],
   creator: siteConfig.name,
   metadataBase: new URL(siteConfig.seo.url),
+  icons: {
+    icon: [
+      { url: `${siteConfig.basePath}/favicon.svg`, type: "image/svg+xml" },
+      { url: `${siteConfig.basePath}/icon.png`, sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: `${siteConfig.basePath}/apple-icon.png`, sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
